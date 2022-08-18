@@ -9,7 +9,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
     - [Links](#links)
         - [Mobile View](#mobile-view)
         - [Desktop View](#desktop-view)
-        - [Desktop View](#desktop-view-w-hover)
     - [Built with](#built-with)
 - [Author](#author)
 
