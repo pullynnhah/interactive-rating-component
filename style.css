@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body {
+  font: 14px/22px "Overpass", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div.active {
+  width: 327px;
+  height: 360px;
+  padding: 25px;
+  background-color: hsl(218, 20%, 16%);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  display: none;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.circle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+}
+
+button.circle:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+button.circle.select {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 54%);
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.submit {
+  width: 279px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 23px;
+}
+
+.submit:not(:disabled):hover {
+  cursor: pointer;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thanks {
+  display: none;
+}
+
+.thanks.active {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.choice {
+  width: 168px;
+  height: 32px;
+  background-color: hsl(213, 19%, 18%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: hsl(25, 97%, 53%);
+  border-radius: 23px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.attribution {
+  width: 100vw;
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  main {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  main div.active {
+    width: 412px;
+    height: 448px;
+    padding: 36px;
+    border-radius: 30px;
+    gap: 32px;
+  }
+
+  .circle {
+    width: 51px;
+    height: 51px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .submit {
+    width: 341px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 23px;
+  }
+
+
+  .thanks {
+    display: none;
+  }
+
+  .thanks.active {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .choice {
+    width: 193px;
+    height: 32px;
+    background-color: hsl(213, 19%, 18%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: hsl(25, 97%, 53%);
+    border-radius: 23px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-height: 550px) {
+  .attribution {
+    display: none;
+  }
+}
