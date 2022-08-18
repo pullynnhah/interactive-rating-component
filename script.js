@@ -1,10 +1,9 @@
-function selectRating(element) {
+function selectRating(event) {
   const selected = document.querySelector(".select");
-  const submit = document.querySelector('.submit');
   if (selected) {
     selected.classList.remove("select");
   }
-  element.classList.add("select");
+  event.target.classList.add("select");
   submit.disabled = false;
 }
 
@@ -18,3 +17,12 @@ function sendRating() {
   active.classList.remove('active');
   thanks.classList.add('active');
 }
+
+const btns = document.querySelectorAll('button.circle');
+const submit = document.querySelector('.submit');
+
+for (const btn of btns) {
+  btn.addEventListener('click', selectRating);
+}
+
+submit.addEventListener('click', sendRating);

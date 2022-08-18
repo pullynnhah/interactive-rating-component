@@ -48,6 +48,10 @@ main div.active {
   align-items: center;
 }
 
+button {
+  transition: all 0.5s ease;
+}
+
 button.circle {
   font-size: 16px;
   line-height: 24px;
@@ -170,7 +174,6 @@ h2 {
     background-color: hsl(25, 97%, 53%);
     border-radius: 23px;
   }
-
 
   .thanks {
     display: none;
